@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "2b9c274a-8e73-4059-9cbc-e6f3bb0e90f2",
+		"name": "ContactManagment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllContacts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44396/api/contact",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44396",
+					"path": [
+						"api",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetContactById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44396/api/contact/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44396",
+					"path": [
+						"api",
+						"contact",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutContact",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \r\n        \"FirstName\": \"Sachin\",\r\n        \"LastName\": \"T\",\r\n        \"Email\": \"shashah@sjkhjshd.com\",\r\n        \"PhoneNumber\": 9898989898,\r\n        \"Status\": true\r\n\t\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44396/api/contact/3",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44396",
+					"path": [
+						"api",
+						"contact",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostContact",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n    \"FirstName\": \"Sharnu\",\n    \"LastName\": \"K\",\n    \"Email\": \"ansn@jhash.com\",\n    \"PhoneNumber\": 9898989898,\n    \"Status\": true\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44396/api/contact",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44396",
+					"path": [
+						"api",
+						"contact"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteContact",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://localhost:44396/api/contact/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44396",
+					"path": [
+						"api",
+						"contact",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
